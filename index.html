@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Net Inter - Home</title>
+    <link rel="stylesheet" href="./css/home.css" />
+    <style>
+      body.dark-mode {
+        background-color: #121212;
+        color: white;
+      }
+
+      nav a {
+        color: inherit;
+      }
+
+      .dark-mode nav {
+        background-color: #1e1e1e;
+      }
+
+      #toggleDarkMode {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      /* Mantém a cor preta dos textos das features */
+      .featured-item {
+        background: white;
+        color: black;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .teste {
+        background: white;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Net Inter</h1>
+      <p>Soluções simples para problemas complexos</p>
+    </header>
+
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="cadastro.html">Cadastro</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="produtos.html">Produtos</a>
+    </nav>
+
+    <main>
+      <h2>Bem-vindo à Nossa Empresa</h2>
+      <p class="teste">
+        Oferecemos soluções inovadoras e de alta qualidade para atender às suas
+        necessidades. Explore nosso site para conhecer nossos produtos e
+        serviços.
+      </p>
+
+      <div class="featured">
+        <div class="featured-item">
+          <img
+            src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            alt="Produto destaque 1"
+          />
+          <h3>Produto Premium</h3>
+          <p>Nossa solução mais completa para suas necessidades.</p>
+          <a href="produtos.html" class="cta-button">Ver detalhes</a>
+        </div>
+
+        <div class="featured-item">
+          <img
+            src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+          />
+          <h3>Oferta Especial</h3>
+          <p>Aproveite o desconto por tempo limitado.</p>
+          <a href="produtos.html" class="cta-button">Ver detalhes</a>
+        </div>
+
+        <div class="featured-item">
+          <img
+            src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+          />
+          <h3>Novo Lançamento</h3>
+          <p>Conheça nossa mais recente inovação.</p>
+          <a href="produtos.html" class="cta-button">Ver detalhes</a>
+        </div>
+      </div>
+    </main>
+
+    <button id="toggleDarkMode">Modo Escuro</button>
+
+    <script>
+      const button = document.getElementById("toggleDarkMode");
+      const body = document.body;
+
+      button.addEventListener("click", function () {
+        body.classList.toggle("dark-mode");
+        button.textContent = body.classList.contains("dark-mode")
+          ? "Modo Claro"
+          : "Modo Escuro";
+      });
+    </script>
+  </body>
+</html>
