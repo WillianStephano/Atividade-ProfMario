@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Net Inter - Produtos</title>
+    <link rel="stylesheet" href="./css/produtos.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Net Inter</h1>
+      <p>Soluções simples para problemas complexos</p>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cadastro.html">Cadastro</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="produtos.html" class="active">Produtos</a>
+    </nav>
+
+    <main>
+      <h2>Nossos Produtos</h2>
+
+      <div class="filters">
+        <label for="categoria">Filtrar por categoria:</label>
+        <select id="categoria">
+          <option value="todos">Todos</option>
+          <option value="categoria1">Categoria 1</option>
+          <option value="categoria2">Categoria 2</option>
+          <option value="categoria3">Categoria 3</option>
+        </select>
+
+        <label for="preco">Ordenar por preço:</label>
+        <select id="preco">
+          <option value="todos">Selecione...</option>
+          <option value="menor">Menor preço</option>
+          <option value="maior">Maior preço</option>
+        </select>
+      </div>
+
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              alt="Produto 1"
+            />
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Produto Premium</h3>
+            <p class="product-price">R$ 1.299,90</p>
+            <p class="product-description">
+              Nossa solução premium oferece recursos avançados para atender às
+              suas necessidades mais exigentes.
+            </p>
+            <a href="#" class="product-button">Comprar</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1613294326794-e7c72bd35d2e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              alt="Produto 2"
+            />
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Produto Standard</h3>
+            <p class="product-price">R$ 899,90</p>
+            <p class="product-description">
+              Uma solução equilibrada com excelente custo-benefício para o dia a
+              dia.
+            </p>
+            <a href="#" class="product-button">Comprar</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1561164718-c1c321b1fb18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"
+              alt="Produto 3"
+            />
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Produto Básico</h3>
+            <p class="product-price">R$ 599,90</p>
+            <p class="product-description">
+              Solução básica ideal para pequenas necessidades com
+              funcionalidades essenciais.
+            </p>
+            <a href="#" class="product-button">Comprar</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+              alt="Produto 4"
+            />
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Produto Pro</h3>
+            <p class="product-price">R$ 1.499,90</p>
+            <p class="product-description">
+              Versão profissional com todas as funcionalidades e suporte
+              prioritário.
+            </p>
+            <a href="#" class="product-button">Comprar</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1498049794561-7780e7231661?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              alt="Produto 5"
+            />
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Produto Ultimate</h3>
+            <p class="product-price">R$ 1.999,90</p>
+            <p class="product-description">
+              Nossa solução mais completa, com recursos exclusivos e garantia
+              estendida.
+            </p>
+            <a href="#" class="product-button">Comprar</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              alt="Produto 6"
+            />
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Produto Empresarial</h3>
+            <p class="product-price">R$ 2.499,90</p>
+            <p class="product-description">
+              Solução completa para empresas, com ferramentas de gerenciamento e
+              análise avançadas.
+            </p>
+            <a href="#" class="product-button">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Net Inter. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
